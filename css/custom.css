@@ -1,0 +1,312 @@
+*
+{
+	box-sizing:border-box;
+}
+.clear
+{
+	clear:both;
+}
+.container
+{
+	width:1200px;
+	margin: auto
+
+}
+/************************* start nav ********************************/
+
+nav
+{
+	font-size: 20px;
+	height: 0;
+	color:white;
+	position:relative;
+	z-index: 3;
+
+}
+.brand
+{
+	width: 30%;
+	/*border:2px solid red;*/
+	text-transform: uppercase;
+}
+
+nav ul
+{
+	width: 60%;
+	/*border:2px solid green;*/
+	list-style: none;
+	margin:0;
+	padding: 0;
+	margin-top: 15px;
+	font-weight:bold;
+
+}
+
+nav ul,.brand
+{
+	float: left
+}
+nav ul li
+{
+	display: inline-block;
+	padding: 10px 0;
+	margin:0 15px;
+	/*border-bottom:1px solid transparent;*/
+
+}
+nav ul li a
+{
+	text-decoration: none;
+	color:white;
+}
+
+nav ul .active a,nav li a:hover
+{
+	color: #1abc9c;
+	border-bottom:2px solid #1abc9c; 
+}
+/********************* end nav ***************************************/
+/********************* start slide ***************************************/
+
+.header
+{
+	
+	background: url('../images/3.jpg');
+	background-size: cover;
+	position:relative;
+	color:white;
+
+} 
+.header .overlay
+{
+	position: absolute;
+	left:0;
+	top:0;
+	width: 100%;
+	height:100%;
+	background-color: rgba(0,0,0,.4);
+	z-index:1;
+}
+.header .bx-wrapper 
+{
+	z-index:2;
+	box-shadow: none;
+	border:0;
+	background: none;
+
+
+}
+.header .bx-wrapper  .bx-viewport
+{
+	height: 177px !important;
+	text-align: center
+}
+.header .bx-wrapper .slider
+{
+	height: 100%
+}
+.header  .slider
+{
+	display: block;
+	font-size: 24px;
+}
+.header  .slider span
+{
+	color: #1abc9c; 
+}
+.bx-wrapper .bx-pager.bx-default-pager a{
+	background-color:red;
+}
+/************************************* end slide *************************************/
+/************************************* start service *************************************/
+
+.separator
+{
+	border:1px solid #ccc;
+	display: block;
+	margin:40px 0;
+}
+
+.our_team .box
+{
+	float:left;
+}
+.our_team .box:first-child
+{
+	width:35%;
+}
+
+.our_team .box:not(:first-child)
+{
+	width:15.25%;
+	margin-left: 1%;
+	position:relative;
+	
+} 
+.our_team .box:not(:first-child) img
+{
+	width:100%;
+
+}
+
+
+.our_team p
+{
+  	color:#888;
+  	line-height: 1.8
+}
+
+.our_team .box:not(:first-child) .overlay
+{
+	position: absolute;
+	top:0;
+	left:0;
+	width:100%;
+	height:100%;
+	background-color: rgb(26, 188, 156,.5);
+	line-height: 9;
+	text-align: center;
+	color:#fff;
+	font-weight: bold;
+	font-size: 26px;
+	display: none
+}
+.our_team .box:not(:first-child):hover .overlay
+{
+	display:block
+}
+
+/************************************* end service *************************************/
+/************************************* start testimonial *************************************/
+.testi
+{
+	background-image: url('../images/7.jpg');
+	background-size:cover;
+	height:500px;
+	position:relative;
+	color:white;
+	text-align: center;
+	
+}
+.testi .testi_overlay
+{
+	position: absolute;
+	left: 0;
+	top: 0;
+	width:100%;
+	height:100%;
+	background-color: rgba(0, 0, 0, 0.8);
+
+}
+.testi h2
+{
+	font-size: 40px;
+	margin: 80px 0 50px
+}
+.testi q
+{
+	font-size: 20px;
+	color: #a0b588;
+	display: block;
+	margin-top: 60px
+}
+.testi p
+{
+	font-size: 30px;
+	color: #1abc9c
+}
+/************************************* start slide by me *************************************/
+.testi .slide > div
+{
+	display: none
+}
+.testi .slide .active
+{
+	display: block
+}
+
+/************************************* end slide by me *************************************/
+
+/************************************* end testimonial *************************************/
+
+/************************************* start project *************************************/
+
+
+.our_projects h2
+{
+	padding:60px 0;
+}
+.our_projects li
+{
+	list-style: none;
+	display: inline-block;
+	padding: 10px 20px;
+	border:1px solid #ccc;
+	color:#aaa; 
+	margin-right: 5px
+} 
+
+
+.our_projects .active
+{
+	color:white;
+	background-color:#1abc9c 
+}
+.our_projects .galary
+{
+	overflow: hidden;
+	/*background-color: red*/
+}
+.our_projects .galary >div
+{
+	
+	width:31.3%;
+	float: left;
+	margin-bottom: 1%;
+	position: relative;
+    margin: 0 1% 1%
+}
+
+.our_projects .galary >div img
+{
+	width: 100%
+}
+.our_projects .galary  .over
+{
+	position: absolute;
+	left: 0;
+	top: 0;
+	width:100%;
+	height:99%;
+	background-color: rgb(26, 188, 156,.5);
+	color:white;
+	text-align: center;
+	font-size: 40px;
+	line-height: 10;
+	display: none
+}
+.our_projects .galary >div:hover .over
+{
+	display: block
+}
+/************************************* end project *************************************/
+/************************************* start footer *************************************/
+footer
+{
+	background-color: #020202d9;
+	padding:40px;
+	color:#fff;
+	overflow: hidden
+}
+
+footer .col
+{
+	width: 25%; 
+	float: left;
+	line-height: 2
+}
+footer .col h2
+{
+	margin-bottom: 30px
+}
+/************************************* end footer *************************************/
